@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AuthProvider with ChangeNotifier {
-  String _token;
+  String? _token;
 
   // Implement authentication methods
   bool get isAuth => _token != null;

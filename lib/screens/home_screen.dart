@@ -23,6 +23,12 @@ class HomeScreen extends StatelessWidget {
               },
             ),
             ListTile(
+              title: Text('Accounting'),
+              onTap: () {
+                // Navigate to Accounting Screen
+              },
+            ),
+            ListTile(
               title: Text('Settings'),
               onTap: () {
                 // Navigate to Settings Screen

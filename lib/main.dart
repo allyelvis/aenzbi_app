@@ -4,6 +4,8 @@ import 'providers/products_provider.dart';
 import 'providers/cart_provider.dart';
 import 'providers/auth_provider.dart';
 import 'providers/order_provider.dart';
+import 'providers/accounting_provider.dart';
+import 'providers/database_provider.dart';
 import 'screens/home_screen.dart';
 import 'screens/login_screen.dart';
 import 'screens/register_screen.dart';
@@ -17,6 +19,8 @@ class AenzbiApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => CartProvider()),
         ChangeNotifierProvider(create: (_) => AuthProvider()),
         ChangeNotifierProvider(create: (_) => OrderProvider()),
+        ChangeNotifierProvider(create: (_) => AccountingProvider()),
+        ChangeNotifierProvider(create: (_) => DatabaseProvider()),
       ],
       child: MaterialApp(
         title: 'Aenzbi App',
